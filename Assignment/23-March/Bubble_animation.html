@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Animation</title>
+    <style>
+        body{
+            background-image: url(/img/20884268.jpg);
+            background-repeat: no-repeat;
+            background-size: 800px;
+            background-position-y: -49%;
+        }
+        .bubble1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 51%;
+            left: 20%;
+            opacity: 0.2;
+            animation: rise 6s infinite;
+        }
+        .bubble1::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble1::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 25px;
+            width: 8px;
+            border-radius: 50%;
+            top: 20px;
+            left: 70px;
+        }
+
+        @keyframes rise{
+            from{top: 51%;}
+            to{top: 30%; opacity: 1;}
+        }
+
+        .bubble2{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 51%;
+            left: 25%;
+            opacity: 0;
+            animation: bubble2 6s infinite;
+        }
+        .bubble2::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble2::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 10px;
+            width: 7px;
+            border-radius: 50%;
+            top: 20px;
+            left: 50px;
+        }  
+        @keyframes bubble2{
+            from{top: 51%;}
+            to{ top: 20%; opacity: 1;}
+        }
+        .bubble3{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 13%;
+            opacity: 0;
+            animation: bubble3 6s infinite;
+        }
+        .bubble3::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble3::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 15px;
+            width: 7px;
+            border-radius: 50%;
+            top: 20px;
+            left: 50px;
+        }
+        @keyframes bubble3{
+            from{top: 53%;}
+            to{ top: 30%; opacity: 1;}
+        }
+        .bubble4{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 15%;
+            opacity: 0;
+            animation: bubble4 6s infinite;
+           
+        }
+        .bubble4::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble4::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 20px;
+            width: 7px;
+            border-radius: 50%;
+            top: 20px;
+            left: 70px;
+        }
+        @keyframes bubble4{
+            from{top: 51%;}
+            to{ top: 18%; opacity: 1;}
+        }
+        .bubble5{
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 52%;
+            left: 22%;
+            opacity: 0;
+            animation: bubble5 6s infinite;
+        }
+        .bubble5::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble5::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 30px;
+            width: 9px;
+            border-radius: 50%;
+            top: 20px;
+            left: 50px;
+        }
+        @keyframes bubble5{
+            from{top: 51%;}
+            to{ top: 5%; opacity: 1;}
+        }
+        .bubble6{
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            background: linear-gradient(to left, #97add7a4, #8fd7c46b);
+	        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            position: absolute;
+            top: 49%;
+            left: 28%;
+            opacity: 0;
+            animation: bubble6 6s infinite;
+        }
+        .bubble6::before{
+            content: "";
+            position: absolute;
+            background: #cdcece48;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            top: 5px;
+            left: 5px;
+            opacity: 0.7;
+            overflow: hidden;
+        }
+        .bubble6::after{
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.773);
+            height: 15px;
+            width: 7px;
+            border-radius: 50%;
+            top: 20px;
+            left: 50px;
+        }
+        @keyframes bubble6{
+            from{top: 54%;}
+            to{ top: 30%;  opacity: 1;}
+        }
+
+        
+
+
+       
+        
+    </style>
+</head>
+<body>
+   
+        <div class="bubble1"> </div>
+        <div class="bubble2"> </div>
+        <div class="bubble3"> </div>
+        <div class="bubble4"> </div>
+        <div class="bubble5"> </div>
+        <div class="bubble6"> </div>
+    
+</body>
+</html>
