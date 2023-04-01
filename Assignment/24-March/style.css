@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: #202124;
+}
+.header{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7px;
+    margin-top: 11px;
+}
+
+.header a{
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+    font-weight: 400;
+    
+}
+
+.header a:hover{
+    text-decoration: underline;
+}
+
+.apps{
+    /* background-color: rgba(86, 85, 85, 0.266); */
+    border-radius: 49%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: -1px;
+    margin-right: 8px;
+    margin-left: 5px;
+    /* padding-left: 0.5%; */
+    /* padding-right: 0.5%; */
+    /* padding-top: 0.5%; */
+    /* margin-left: 0.5%; */
+    /* font-size: 13px; */
+}
+
+.apps span{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    /* align-items: center; */
+}
+
+.apps:hover{
+    background-color: rgba(86, 85, 85, 0.266);
+    cursor: pointer;
+}
+
+.account-img{
+    /* background-color: rgba(86, 85, 85, 0.266); */
+    border-radius: 49%;
+    width: 32px;
+    height: 31px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    /* margin-left: 1px; */
+}
+
+.account-img:hover{
+    background-color: rgba(86, 85, 85, 0.266);
+    cursor: pointer;
+}
+
+.account-img img{
+    width: 98%;
+    height: 98%;
+    border-radius: 50%;
+}
+
+.container{
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6.8%;
+}
+
+.search{
+    border: 1px solid rgba(255, 255, 255, 0.277);
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 17px;
+    padding-top: 9px;
+    display: flex;
+    /* width: auto; */
+    position: relative;
+    height: 35px;
+    /* width: auto; */
+    margin-top: 27px;
+}
+
+.search:hover{
+    background-color: rgba(86, 85, 85, 0.354);
+    border: none;
+}
+
+.search span{
+    color: rgba(255, 255, 255, 0.582);
+    margin-top: 3px;
+    font-size: 19.5px
+}
+
+
+
+#img-1{
+    margin-left: 20px;
+    /* margin-top: 1px; */
+}
+#img-2{
+    margin-left: 18px;
+    margin-top: 3.5px;
+}
+.search input{
+    background-color: transparent;
+    border:none;
+    width: 440px;
+    height: 35px;
+    margin-top: -6px;
+    font-size: 16px;
+    margin-left: 10px;
+    color: #e8eaed;
+    outline: none;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-btn a{
+    color: #e8eaed;
+    text-decoration: none;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 16px 9px;
+    margin: 9px 6px;
+}
+
+.search-btn a:hover{
+    border: 1px solid rgba(255, 255, 255, 0.207);
+}
+
+.language{
+    color: #bdc1c6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-top: 18px;
+}   
+
+.language a{
+    color: #8ab4f8;
+    text-decoration: none;
+    font-size: small;
+    margin-right: 6px;
+}
+
+.language a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    background-color: rgb(20, 20, 20);
+}
+
+.footer .india{
+    color: #999da2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.231)
+    
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+
+.items a{
+    color: #999da2;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-right: 25px;    
+}
+
+.item-1{
+    margin-left: 20px;
+}
+
+@media (max-width:996px){
+    .header a{
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width:663px)
+{
+    .items{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width:595px){
+    .search{
+        width: 85vw;
+    }
+    .search input{
+        width: 100%;
+    }
+    .header{
+        margin-right: 10px;
+    }
+    .container{
+        margin-top: 15px;
+    }
+    
+}
