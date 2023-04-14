@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Animal's Friend</title>
+</head>
+
+<body>
+    <div id="msg">
+        <p>Form Has Been Submited</p>
+    </div>
+    <!-- <nav class="navbar">
+        <div class="nav-item">
+            <a href="#"><span class="material-symbols-outlined">
+                    house
+                </span></a>
+            <a href="#"><span class="material-symbols-outlined">
+                    volunteer_activism
+                </span></a>
+            <a href="#"><span class="material-symbols-outlined">
+                    groups
+                </span></a>
+            <a href="#"><span class="material-symbols-outlined">
+                    support_agent
+                </span></a>
+        </div>
+    </nav> -->
+
+    <nav class="navbar-2">
+        <h1 class="site-title">Animal's Friend</h1>
+        <div class="nav-item-2">
+            <a href="#" id="home">
+                <div>
+                    <span class="material-symbols-outlined" id="icon">
+                        house
+                    </span>
+                </div>
+                <span class="name">HOME</span>
+            </a>
+            <a href="/donate.html">
+                <div>
+                    <span class="material-symbols-outlined">
+                        savings
+                    </span>
+                </div>
+                <span class="name">DONATE</span>
+            </a>
+            <a href="#">
+                <div>
+                    <span class="material-symbols-outlined" id="about-icon">
+                        groups
+                    </span>
+                </div>
+                <span class="name" id="about-name">ABOUT</span>
+            </a>
+            <a href="#">
+                <div>
+                    <span class="material-symbols-outlined" id="icon">
+                        support_agent
+                    </span>
+                </div>
+                <span class="name">SUPPORT</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container-item">
+            <div class="img-slider">
+                <img class="slider-img" src="/img/cow-1.jpg" alt="">
+                <img class="slider-img" src="/img/cow-2.jpg" alt="">
+                <img class="slider-img" src="/img/Cow-3.webp" alt="">
+                <img class="slider-img" src="/img/img-1.jpg" alt="">
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi facere eos consequatur
+                    impedit repudiandae a maiores dolore corrupti sunt.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-2">
+        <h1 id="title">Tell Us Where Is The Cow's</h1>
+        <div class="container-2-item">
+            <div class="location">
+                <img src="https://www.thestatesman.com/wp-content/uploads/2020/04/googl_ED.jpg" alt="">
+            </div>
+            <div class="form-section">
+                <form action="#">
+                    <label for="">Full Name :</label>
+                    <div class="full-name">
+                        <input id="firstname" type="text" placeholder="First Name" required>
+                        <input id="lastname" type="text" placeholder="Last Name" required>
+                    </div>
+                    <label for="">Mobile no :</label>
+                    <div class="mobile-no">
+                        <input id="mobile-no" type="tel" minlength="10" maxlength="10" placeholder="+91" required>
+                    </div>
+                    <label for="">Email :</label>
+                    <div class="email">
+                        <input id="email" type="email" placeholder="abc@gmail.com">
+                    </div>
+                    <label for="">Number Of Cows Approx :</label>
+                    <div class="no-cows">
+                        <input id="no-cows" type="number" placeholder="Number Of Cows" required>
+                    </div>
+                    <label for="">Address :</label>
+                    <div class="address">
+                        <input id="state" type="text" placeholder="State" required>
+                        <input id="city" type="text" placeholder="City" required>
+                        <input id="area" type="text" placeholder="Area" required>
+                        <input id="street" type="text" placeholder="Street" required>
+                        <input id="landmark" type="text" placeholder="Landmark">
+                    </div>
+                    <input id="submit" type="submit" onclick="print()">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="adopt-cow">
+            <h1 id="title">Cow Adoption</h1>
+            <p class="adopt-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, laborum beatae nemo
+                officia deserunt asperiores facere eligendi accusamus ab at suscipit quos facilis fuga qui repellat
+                aliquam? Cumque distinctio similique odio earum, nisi, repellendus maiores, aperiam dignissimos unde
+                aliquam temporibus.</p>
+            <div class="adoption-condition">
+                <div class="condition-1">
+                    <h2>1. Identification</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas iure eveniet commodi
+                        odit quibusdam rem praesentium ducimus nihil voluptatum.</p>
+                </div>
+                <div class="condition-2">
+                    <h2>2. Take Strict Action</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas iure eveniet commodi
+                        odit quibusdam rem praesentium ducimus nihil voluptatum.</p>
+                </div>
+                <div class="condition-3">
+                    <h2>3. Take Care Of Cow</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas iure eveniet commodi
+                        odit quibusdam rem praesentium ducimus nihil voluptatum.</p>
+                </div>
+            </div>
+            <button type="button" id="adopt" onclick="adoptionForm()">ADOPT</button>
+        </div>
+    </div>
+
+    <div class="adoption-form" id="adoption">
+        <button id="close-btn" onclick="hideForm()">&#10005</button>
+        <form class="adoption" action="#">
+            <label for="">Full Name :</label>
+            <div class="adoption-form-name">
+                <input id="fname" type="text" placeholder="First Name" required>
+                <input id="lname" type="text" placeholder="Last Name" required>
+            </div>
+            <label for="">Mobile no :</label>
+            <div class="adoption-form-mobile">
+                <input id="contact-no" type="tel" minlength="10" maxlength="10" placeholder="+91" required>
+            </div>
+            <label for="">Email :</label>
+            <div class="adoption-form-email">
+                <input id="adoption-email" type="email" placeholder="abc@gmail.com">
+            </div>
+           <button id="submit-btn" onclick="adoptSubmit()">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="item-1">
+            <a href="#">About Us</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+        <div class="item-2">
+            <div class="facebook">
+                <a href="#"><img src="/img/fb.svg" alt=""></a>
+            </div>
+            <div class="insta">
+                <a href="#"><img src="/img/insta.svg" alt=""></a>
+            </div>
+            <div class="twitter">
+                <a href="#"><img src="/img/twitter.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="item-3">
+            <p>© 2023 Nand Dadhania</p>
+            <p>nanddadhania@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- <button onclick="show()">Show</button> -->
+
+</body>
+<script src="/index.js"></script>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/worker_side.css">
+    <title>Document</title>
+</head>
+
+<body onload="onload()">
+
+
+
+    <img src="/img/pngwing.com (1).png" alt="" width="8%">
+    <div class="container">
+        <div id="alert">
+            <span>Request is Coming</span>
+            <button onclick="show()">&#10003</button>
+        </div>
+        <h1>Pick Up Request</h1>
+        <div class="show">
+            <div class="info" id="info">
+                <span id="check">&#10003</span>
+                <div class="header">
+                    <div class="name">
+                        <span class="first-name" id="first"></span>
+                        <span class="last-name" id="last"></span>
+                    </div>
+                    <span class="cows-no">No of cows : <span id="cows"></span> </span>
+                </div>
+                <p class="contact">Phone No. : <span id="mobile"></span></p>
+                <p class="address">Address : <span id="street"></span> ,<span id="area"></span> ,<span id="city"></span>
+                    ,<span id="state"></span></p>
+
+                <button id="complete-btn" onclick="done()">Complete</button>
+            </div>
+        </div>
+        <h1>Adoption Request</h1>
+        <div class="show-2">
+            <div class="adoption-info" id="adoption-info">
+                <span id="accept">&#10003</span>
+                <span id="reject">&#215</span>
+                <div class="adoption-name">
+                    <span> Name : <span id="fname"></span> <span id="lname"></span> </span>
+                </div>
+                <div class="adoption-phone">
+                    <span> Mobile No : <span id="phone"></span> </span>
+                </div>
+                <div class="adoption-email">
+                    <span> Email : <span id="email-add"></span> </span>
+                </div>
+                <div id="adopt-btn">
+                    <button id="accept-btn" onclick="accept()">&#10003 Accept</button>
+                    <button id="reject-btn" onclick="reject()"><span>&#215</span> Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/worker_side.js"></script>
+</body>
+
+</html>
