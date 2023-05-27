@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/donet.css">
+    <title>Donate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="details">
+            <h1>We Are Using Donation For :</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla accusantium quisquam esse eius tempore officia facilis corrupti a, earum aspernatur!</p>
+        </div>
+        <div class="payment">
+            <div class="debit-card">
+                <div class="debit-card-name">
+                    <span class="name-debit" onclick="showdebit()">DEBIT CARD</span>
+                    <img src="/img/visa.png" alt="" width="15%">
+                </div>
+                <div class="debit-card-detail" id="debit">
+                    <label for="">DEBIT CARD NUMBER </label>
+                    <input type="number" id="debit-card-number">
+                    <label for="">CARD HOLDER NAME</label>
+                    <input type="text" id="debit-name-holder">
+                    <div class="ex-cvv">
+                        <div class="expiry">
+                            <label for="">EXPIRY </label>
+                            <input type="month" id="debit-expiry">
+                        </div>
+                        <div class="cvv">
+                            <label for="">CVV </label>
+                            <input type="tel" id="debit-cvv">
+                        </div>
+                    </div>
+                    <button id="donate-btn">DONATE</button>
+                </div>
+            </div>
+            <div class="credit-card">
+                <div class="credit-card-name">
+                    <span class="name-credit" onclick="showCredit()">CREDIT CARD</span>
+                    <img src="/img/atm-card.png" alt="" width="10%">
+                </div>
+                <div class="credit-card-detail" id="credit">
+                    <label for="">CREDIT CARD NUMBER </label>
+                    <input type="number" id="credit-card-number">
+                    <label for="">CARD HOLDER NAME</label>
+                    <input type="text" id="credit-name-holder">
+                    <div class="ex-cvv">
+                        <div class="expiry">
+                            <label for="">EXPIRY </label>
+                            <input type="month" id="credit-expiry">
+                        </div>
+                        <div class="cvv">
+                            <label for="">CVV </label>
+                            <input type="tel" id="credit-cvv">
+                        </div>
+                    </div>
+                    <button id="donate-btn">DONATE</button>
+                </div>
+            </div>
+            <div class="upi">
+                <div class="upi-name">
+                    <span id="upi">UPI</span>
+                    <img src="/img/upi-icon.png" alt="" width="12%">
+                </div>
+                <div class="upi-app">
+                    <a href="#"><img src="/img/google-pay-icon.png" alt="" width="10%"></a>
+                    <a href="#"><img src="/img/phonepe-logo-icon.png" alt="" width="10%"></a>
+                    <a href="#"><img src="/img/paytm.png" alt="" width="10%"></a>
+                </div>
+            </div>
+            <div class="paytm-wallet">
+                <div class="paytm-name">
+                <span id="wallet">Paytm Wallet</span>
+                <img src="/img/wallet.png" alt="" width="10%">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/donet.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    table{
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    caption{
+        font-size: 50px;
+    }
+    #table-head{
+        text-align: center;
+    }
+    #time{
+        padding: 9px;
+    }
+
+    #table-body{
+        text-align: center;
+    }
+
+    #table-body td{
+        padding: 20px;
+    }
+
+    #break{
+        background-color: rgba(244, 251, 31, 0.287);
+    }
+
+    #col-grp{
+        background-color: rgba(45, 168, 250, 0.32);
+    }
+
+    #html-img{
+        display: none;
+    }
+
+    #css-img{
+        display: none;
+    }
+
+    #js-img{
+        display: none;
+    }
+
+    #react-img{
+        display: none;
+    }
+    
+    #exp-img{
+        display: none;
+    }
+
+    #html-box{
+        background-color: rgba(252, 252, 30, 0.641);
+    }
+
+    #html-box:hover #html-img{
+        display: block;
+        position: absolute;
+        width: 17%;
+    }
+
+    #css-box{
+        background-color: rgba(12, 137, 246, 0.661);
+    }
+
+    #css-box:hover #css-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #js-box{
+        background-color: rgba(246, 11, 176, 0.452);
+    }
+
+    #js-box:hover #js-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #react-box{
+        background-color: rgba(27, 246, 133, 0.771);
+    }
+    
+    #react-box:hover #react-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #exp-box{
+        background-color: rgba(240, 63, 93, 0.622);
+    }
+
+    #exp-box:hover #exp-img{
+        display: block;
+        position: absolute;
+        width: 15%;
+    }
+
+    #practice-box{
+        background-color:rgba(137, 43, 226, 0.675);
+    }
+</style>
+
+</head>
+<body>
+    <table border="1">
+        <caption> Time Table  </caption>
+        <thead>
+            <colgroup id="col-grp" span="6"></colgroup>
+            <tr id="table-head">
+                <td id="time"> Time </td>
+                <td> <p>I</p> <p>9:00 to 9:45</p> </td>
+                <td> <p>II</p> <p>9:45 to 10:30</p> </td>
+                <td> <p>III</p> <p>10:30 to 11:00</p> </td>
+                <td> <p>IV</p> <p>11:00 to 11:45</p> </td>
+                <td> <p>V</p> <p>11:45 to 12:30</p> </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="table-body">
+                <td>Monday</td>
+                <td id="html-box"><span id="html">Html</span> <img src="/img/Bruce.webp" id="html-img" alt=""></td>
+                <td id="css-box"><span id="css">Css</span> <span><img src="/img/elon-musk.webp" id="css-img" alt=""></span></td>
+                <td rowspan="6" id="break"> Break </td>
+                <td id="js-box"><span id="js">Javascript</span> <span><img src="/img/Kevin-Mitnick.webp" id="js-img" alt=""></span></td>
+                <td id="react-box" ><span id="react">React</span> <span><img src="/img/tony.jpg" id="react-img" alt=""></span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Tuesday</td>
+                <td id="js-box"><span id="js">Javascript</span> <span><img src="/img/Kevin-Mitnick.webp" id="js-img" alt=""></span></td>
+                <td id="html-box"><span id="html">Html</span> <span><img src="/img/Bruce.webp" id="html-img" alt=""></span></td>
+                <td id="css-box"><span id="css">Css</span> <span><img src="/img/elon-musk.webp" id="css-img" alt=""></span></td>
+                <td id="exp-box"><span id="exp">Express</span> <span><img src="/img/wayne.jpg" id="exp-img" alt=""></span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Wednesday</td>
+                <td id="react-box"><span id="react">React</span> <span><img src="/img/tony.jpg" id="react-img" alt=""></span></td>
+                <td id="css-box"><span id="css">Css</span> <span><img src="/img/elon-musk.webp" id="css-img" alt=""></span></td>
+                <td id="html-box"><span id="html">Html</span> <span><img src="/img/Bruce.webp" id="html-img" alt=""></span></td>
+                <td id="practice-box" rowspan="2"><span >Practice</span></td>
+            </tr>
+
+            <tr id="table-body">
+                <td>Thursday</td>
+                <td id="js-box"><span id="js">Javascript</span> <span><img src="/img/Kevin-Mitnick.webp" id="js-img" alt=""></span></td>
+                <td id="react-box" rowspan="2"><span id="react">React</span> <span><img src="/img/tony.jpg" id="react-img" alt=""></span></td>
+                <td id="exp-box"><span id="exp">Express</span> <span><img src="/img/wayne.jpg" id="exp-img" alt=""></span></td>
+                
+            </tr>
+
+            <tr id="table-body">
+                <td>Friday</td>
+                <td id="css-box"><span id="css">Css</span> <span><img src="/img/elon-musk.webp" id="css-img" alt=""></span></td>
+                <td id="js-box"><span id="js">Javascript</span> <span><img src="/img/Kevin-Mitnick.webp" id="js-img" alt=""></span></td>
+                <td id="exp-box"><span id="exp">Express</span> <span><img src="/img/wayne.jpg" id="exp-img" alt=""></span></td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            position: relative;
+            margin-top: 3%;
+            margin-left: 30%;
+            margin-bottom: 7%;
+            background-color: rgba(128, 128, 128, 0.384);
+            /* transform: translate(50%, 50%); */
+            padding: 3%;
+            box-shadow: 5px 7px 10px;
+            width: 50%;
+            height: 80vh;
+            display: grid;
+            grid-gap: 2%;
+            grid-template-areas:
+                'div1 div2 div3'
+                'div4 none div5'
+                'div6 div7 div8';
+            animation: puzzle 8s infinite;
+            animation-direction: alternate;
+            animation-delay: 2s;
+        }
+
+        @keyframes puzzle {
+            10% {
+                grid-template-areas:
+                    'div1 div2 div3'
+                    'div4 div5 none'
+                    'div6 div7 div8';
+            }
+
+            20% {
+                grid-template-areas:
+                    'div1 div2 none'
+                    'div4 div5 div3'
+                    'div6 div7 div8';
+            }
+
+            30% {
+                grid-template-areas:
+                    'div1 none div2'
+                    'div4 div5 div3'
+                    'div6 div7 div8';
+            }
+
+            40% {
+                grid-template-areas:
+                    'div1 div5 div2'
+                    'div4 none div3'
+                    'div6 div7 div8';
+            }
+
+            50% {
+                grid-template-areas:
+                    'div1 div5 div2'
+                    'div4 div7 div3'
+                    'div6 none div8';
+            }
+
+            60% {
+                grid-template-areas:
+                    'div1 div5 div2'
+                    'div4 div7 div3'
+                    'none div6 div8';
+            }
+
+            70% {
+                grid-template-areas:
+                    'div1 div5 div2'
+                    'none div7 div3'
+                    'div4 div6 div8';
+            }
+
+            80% {
+                grid-template-areas:
+                    'none div5 div2'
+                    'div1 div7 div3'
+                    'div4 div6 div8';
+            }
+
+            90% {
+                grid-template-areas:
+                    'div5 none div2'
+                    'div1 div7 div3'
+                    'div4 div6 div8';
+            }
+
+            100% {
+                grid-template-areas:
+                    'div5 div7 div2'
+                    'div1 none div3'
+                    'div4 div6 div8';
+            }
+        }
+
+        .div1 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div1;
+            background-color: rgba(53, 240, 178, 0.836);
+        }
+
+        .div2 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div2;
+            background-color: rgb(127, 178, 255);
+        }
+
+        .div3 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div3;
+            background-color: rgb(195, 249, 77);
+        }
+
+        .div4 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div4;
+            background-color: rgba(19, 250, 250, 0.869);
+        }
+
+        .div5 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div5;
+            background-color: rgb(244, 108, 49);
+        }
+
+        .div6 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div6;
+            background-color: bisque;
+        }
+
+        .div7 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div7;
+            background-color: rgba(162, 77, 243, 0.93);
+        }
+
+        .div8 {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: div8;
+            background-color: rgb(241, 155, 50);
+        }
+
+
+        .main {
+            width: 50%;
+            height: 60vh;
+            border: 1px solid black;
+            margin-top: 2%;
+            display: grid;
+            grid-auto-columns: 32%;
+            gap: 2%;
+            /* margin-bottom: 9%; */
+            margin-left: 30%;
+            padding: 2%;
+
+        }
+
+        .one {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: 1/1;
+        }
+
+        .two {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: 1/2;
+        }
+
+        .three {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000000;
+            grid-area: 1/3/3/4;
+        }
+
+        .four {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: 2/1/2/3;
+        }
+
+        .five {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: 3/1/5/2;
+        }
+
+        .six {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            grid-area: 3/3;
+        }
+
+        .ball {
+            width: 60%;
+            height: 90vh;
+            margin-bottom: 5%;
+            background-color: rgb(26, 27, 27);
+            position: relative;
+            margin-left: 20%;
+            box-shadow: 2px 10px 10px grey;
+        }
+
+        .ball2 {
+            background-color: rgb(0, 255, 149);
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            animation: ball2 1s infinite alternate;
+        }
+
+        @keyframes ball2 {
+            from {
+                top: 2%;
+                left: 2%
+            }
+
+            to {
+                top: 40%;
+                left: 47%;
+                opacity: 0;
+            }
+        }
+
+        .ball3 {
+            background-color: rgba(0, 21, 255, 0.859);
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            top: 2%;
+            right: 2%;
+            animation: ball3 1s infinite alternate;
+        }
+
+        @keyframes ball3 {
+            from {
+                top: 2%;
+                right: 2%
+            }
+
+            to {
+                top: 40%;
+                right: 47.2%;
+                opacity: 0;
+            }
+        }
+
+        .ball4 {
+            background-color: rgba(255, 0, 115, 0.897);
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            bottom: 2%;
+            right: 2%;
+            animation: ball4 1s infinite alternate;
+        }
+
+        @keyframes ball4 {
+            from {
+                bottom: 2%;
+                right: 2%
+            }
+
+            to {
+                bottom: 48%;
+                right: 45.2%;
+                opacity: 0;
+            }
+        }
+
+        .ball5 {
+            background-color: rgba(241, 216, 26, 0.778);
+            width: 10%;
+            border-radius: 50%;
+            height: 10vh;
+            position: absolute;
+            bottom: 2%;
+            left: 2%;
+            animation: ball5 1s infinite alternate;
+        }
+
+        @keyframes ball5 {
+            from {
+                bottom: 2%;
+                left: 2%
+            }
+
+            to {
+                bottom: 48%;
+                left: 47%;
+                opacity: 0;
+            }
+        }
+
+        .abc {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: aquamarine;
+            height: 50vh;
+        }
+
+        .ac {
+            border: 2px solid black;
+        }
+
+        .ac2 {
+            border: 2px solid black;
+        }
+
+        .ac1 {
+            border: 2px solid black;
+        }
+
+        :where(.ac, .ac1, .ac2):hover {
+            background-color: brown;
+        }
+
+        .abc:has(.ac:hover) {
+            grid-template-columns: 50% 1fr 1fr;
+        }
+
+        .abc:has(.ac1:hover) {
+            grid-template-columns: 1fr 50% 1fr;
+        }
+
+        .abc:has(.ac2:hover) {
+            grid-template-columns: 1fr 1fr 50%;
+        }
+
+        .line {
+            width: 60%;
+            height: 90vh;
+            margin-bottom: 5%;
+            background-color: rgb(26, 27, 27);
+            position: relative;
+            margin-left: 20%;
+            margin-top: 7%;
+        }
+
+        .line1 {
+            position: absolute;
+            top: 9%;
+            left: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(157, 0, 255);
+            transform: rotateZ(45deg);
+            animation: line1 1s infinite alternate-reverse;
+        }
+
+        @keyframes line1 {
+            from {
+                width: 15%;
+                top: 9%;
+            }
+
+            to {
+                width: 0%;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line2 {
+            position: absolute;
+            top: 9%;
+            left: 45%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(255, 128, 0);
+            transform: rotateZ(90deg);
+            animation: line2 1s infinite alternate;
+        }
+
+        @keyframes line2 {
+            from {
+                width: 15%;
+                top: 9%;
+            }
+
+            to {
+                width: 0%;
+                top: 50%;
+                left: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line3 {
+            position: absolute;
+            top: 9%;
+            right: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid red;
+            transform: rotateZ(130deg);
+            animation: line3 1s infinite alternate-reverse;
+        }
+
+        @keyframes line3 {
+            from {
+                width: 15%;
+                top: 9%;
+            }
+
+            to {
+                width: 0%;
+                top: 50%;
+                right: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line4 {
+            position: absolute;
+            bottom: 49.5%;
+            left: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(0, 255, 229);
+            animation: line4 1s infinite alternate;
+        }
+
+        @keyframes line4 {
+            from {
+                width: 15%;
+                bottom: 49.5%;
+            }
+
+            to {
+                width: 0%;
+                left: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line5 {
+            position: absolute;
+            bottom: 9%;
+            left: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid #ffcc00;
+            transform: rotateZ(130deg);
+            animation: line5 1s infinite alternate-reverse;
+        }
+
+        @keyframes line5 {
+            from {
+                width: 15%;
+                bottom: 9%;
+            }
+
+            to {
+                width: 0%;
+                bottom: 50%;
+                left: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line6 {
+            position: absolute;
+            bottom: 9%;
+            left: 45%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(0, 0, 255);
+            transform: rotateZ(90deg);
+            animation: line6 1s infinite alternate;
+        }
+
+        @keyframes line6 {
+            from {
+                width: 15%;
+                bottom: 9%;
+            }
+
+            to {
+                width: 0%;
+                bottom: 50%;
+                left: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line7 {
+            position: absolute;
+            bottom: 9%;
+            right: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(0, 255, 26);
+            transform: rotateZ(45deg);
+            animation: line7 1s infinite alternate-reverse;
+        }
+
+        @keyframes line7 {
+            from {
+                width: 15%;
+                bottom: 9%;
+            }
+
+            to {
+                width: 0%;
+                bottom: 50%;
+                right: 50%;
+                opacity: 0;
+            }
+        }
+
+        .line8 {
+            position: absolute;
+            bottom: 49.5%;
+            right: 0%;
+            width: 15%;
+            height: 0.2vh;
+            border: 2px solid rgb(255, 0, 115);
+            animation: line8 1s infinite alternate;
+
+        }
+
+        @keyframes line8 {
+            from {
+                width: 15%;
+                bottom: 49.5%;
+            }
+
+            to {
+                width: 0%;
+                bottom: 49.5%;
+                right: 50%;
+                opacity: 0;
+            }
+        }
+
+        .birthday {
+            margin-left: 30%;
+            margin-top: -40%;
+
+            /* animation: hb 1.5s infinite ease-out; */
+        }
+
+        @keyframes hb {
+
+            0%,
+            20% {
+                transform: translateY(0);
+            }
+
+
+            40% {
+                transform: translateY(-45px);
+                margin-top: 0%;
+            }
+
+            50% {
+                transform: translateY(-1px);
+                margin-top: 0%;
+            }
+
+            60% {
+                transform: translateY(-40px);
+                margin-top: 0%;
+            }
+
+            80%,
+            100% {
+                transform: translateY(0);
+                margin-top: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="container">
+        <div class="navbar">Home About jashdgjahsdgjhasgd <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores expedita suscipit libero sunt magnam ut id quibusdam voluptatum ab modi architecto repellendus dolorum assumenda explicabo eligendi tempore, molestiae fugiat officiis! Delectus ipsam sapiente sit maxime, numquam deserunt hic sunt possimus nisi dolor temporibus quod esse aut, omnis reiciendis at!</div></div>
+        <div class="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium enim deserunt doloremque ea nobis, iure pariatur natus, aliquid architecto praesentium itaque obcaecati dolorum quia illo corporis tenetur sapiente minus, saepe ullam delectus dolorem! Reiciendis cupiditate magnam eos distinctio. Explicabo ex, reprehenderit, facilis, quisquam tempore sunt porro a saepe praesentium aliquid corrupti. Architecto porro voluptatibus molestias consectetur. Corporis, autem ex veritatis eius est expedita vero alias, tempore nobis impedit fugiat pariatur recusandae nesciunt harum nemo dolorem sint delectus dignissimos possimus! Laboriosam, expedita optio, at tempore blanditiis maxime perferendis placeat repellendus sequi totam sapiente doloremque consequatur sed unde ratione fuga, natus qui! A fuga, accusantium veritatis possimus recusandae corrupti temporibus cum! Vero architecto nisi nostrum itaque at, odio similique fugiat dicta, dolorum pariatur unde placeat rem, ipsam  <div class="section1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi dolorum voluptatibus non quo tempore esse earum id consequatur libero optio! <div class='section2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam maiores tenetur adipisci dolorem velit natus magnam placeat ad, sunt dolores?</div></div></div>
+        <div class="aside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam doloremque necessitatibus voluptatum voluptatibus amet. Architecto itaque eveniet rerum, natus cumque tempore! Culpa quam non necessitatibus veritatis nihil nemo, maiores vero minus qui reprehenderit voluptatum dignissimos recusandae ducimus illo facilis provident itaque hic libero. Quo pariatur, ducimus ut non error obcaecati id ab? Dolorum obcaecati rem eveniet reiciendis facilis odit porro eligendi adipisci eaque dolor amet iusto vel doloribus, aliquam impedit minus? Optio facilis esse quasi itaque aspernatur tenetur fuga nesciunt quis blanditiis harum ut incidunt voluptatibus repellendus similique, tempore vel nobis fugit dolore maiores. Reprehenderit, numquam? Ut sapiente, voluptatibus, aut vero tempore officia totam enim mollitia illum quod quidem dicta, possimus animi ab nam vitae ipsum. Autem impedit, distinctio ad ipsa expedita minima alias architecto exercitationem error rem quasi non sint beatae ducimus laborum nihil doloribus delectus debitis dignissimos. Repellendus ab tenetur minus, sunt qui officia! Assumenda deleniti earum nemo?</div>
+        <div class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus quaerat harum quos incidunt voluptatibus, ab fugiat veritatis distinctio inventore! Libero sint fugit, sapiente laboriosam voluptate blanditiis corrupti voluptatem obcaecati.</div>
+    </div> -->
+
+    <div class="nd">
+        <div class="nd2"></div>
+    </div>
+
+    <!-- <img class='birthday' src="/img/pngwing.com (1).png" alt="" width="40%"> -->
+
+    <div class="main">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+
+    <div class="container">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+    </div>
+
+
+
+    <div class="ball">
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+        <div class="ball5"></div>
+    </div>
+
+
+
+    <div class="line">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line5"></div>
+        <div class="line6"></div>
+        <div class="line7"></div>
+        <div class="line8"></div>
+    </div>
+
+    <div class="abc">
+        <div class="ac"></div>
+        <div class="ac1"></div>
+        <div class="ac2"></div>
+    </div>
+</body>
+
+</html>

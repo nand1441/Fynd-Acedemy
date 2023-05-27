@@ -1,0 +1,234 @@
+body{
+    background-color: black;
+   
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    margin-top: -0.5%;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+    background-color:black ;
+    background: url(/img/global-nav-bg.png);
+    background-size: 2px;
+}
+
+#nav-items-items a{
+    margin: 1%;
+    text-decoration: none;
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav-items-2 a{
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav-items-2{
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    
+}
+
+#nav-img img{
+    width: 15%;
+}
+
+#nav-img{
+    position: relative;
+}
+
+#nav-items{
+    position: absolute;
+    top: 4%;
+    left: 18%;
+    width: 50%;
+    
+}
+
+video{
+    /* margin-top: -2%; */
+    position: relative;
+}
+
+
+
+#container-item-1{
+    position: absolute;
+    width: 20%;
+    height: 25vh;
+    /* right: 30%; */
+    left: 25%;
+    top: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    background-color: rgba(20, 20, 20, 0.522) ;
+    
+    /* background-color: transparent; */
+}
+
+#container-item-1 img{
+    padding-left: 35%;
+    padding-top: 6%;
+}
+#container-item-1 p{
+    color: whitesmoke;
+    text-align: center;
+}
+#container-item-1 a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #71af3a;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    position:absolute;
+    bottom: 20%;
+    left: 22%;
+    border-radius: 5px;
+}
+
+#container-item-2{
+    position: absolute;
+    width: 20%;
+    height: 25vh;
+    right: 25%;
+    top: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    background-color: rgba(20, 20, 20, 0.522) ;
+    /* background-color: transparent; */
+}
+
+#container-item-2 p{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 1%;
+}
+#container-item-2 a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #71af3a;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    position:absolute;
+    bottom: 20%;
+    left: 22%;
+    border-radius: 5px;
+}
+
+#container-item-2 img{
+    padding-left: 30%;
+    padding-top: 6%;
+}
+
+.container-2{
+    border-top:1px solid rgba(255, 255, 255, 0.449) ;
+    /* position: absolute; */
+}
+
+#get-the-game{
+    color: grey;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+#container-2-item-1{
+    width: 20%;
+    border: 1px solid rgba(255, 255, 255, 0.423);
+    position: absolute;
+    left: 15%;
+}
+
+#container-2-item-1 p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#container-2-item-2{
+    width: 20%;
+    border: 1px solid rgba(255, 255, 255, 0.423);
+    position: absolute;
+    left: 40%;
+}
+
+#container-2-item-2 p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#container-2-item-3{
+    width: 20%;
+    border: 1px solid rgba(255, 255, 255, 0.423);
+    position: absolute;
+    right: 15%;
+}
+
+#container-2-item-3 p{
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+#footer{
+    position: relative;
+    width: 60%;
+    margin-top: 40%;
+    left: 20%;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.425); */
+    padding-bottom: 3%;
+}
+
+#footer-items {
+    text-align: center;   
+}
+
+#footer-items a{
+    color: grey;
+    margin-left: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-img{
+    margin-top: 4%;
+    padding-top: 5%;
+    padding-left: 10%;
+    border-top: 1px solid rgba(255, 255, 255, 0.363) ;
+}
+
+#footer-img img{
+    margin-left: 3%;
+}
+
+footer p{
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 4%;
+    font-size: 0.7em;
+    text-align: center;
+}
